@@ -1,0 +1,151 @@
+.hero{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.hero img{
+    margin-top: 100px;
+    width: 250px;
+}
+
+.hero h1{
+    text-align: center;
+    width: 60%;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.hero h1 span{
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p{
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.hero-action{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    font-weight: bolder;
+
+}
+
+.hero-connect{
+    padding: 25px 45px;
+    border-radius: 50px;
+    /* background: linear-gradient(264deg, #DF8908 -5.0%, #B415FF 106.28%); */
+     background: linear-gradient(45deg, #ff00cc -5.0%, #3333ff 106.28%, #00ffcc 106.44%);
+    cursor: pointer;
+}
+
+.hero-resume{
+    padding: 25px 75px;
+    border-radius: 50pc;
+    border: 2px solid #FFF;
+    cursor: pointer;
+}
+
+.hero-connect:hover{
+    border: 2px solid white;
+
+}
+
+.hero-resume:hover{
+    border-color: #B415FF;
+    color: #B415FF;
+}
+
+/* .img2{
+    border-right: 2px solid rgb(198, 31, 184);
+    border-left: 2px solid rgb(187, 55, 7);
+} */
+ .img2 {
+  display: inline-block;
+  padding: 4px; 
+  border-radius: 16px;
+  background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffcc);
+}
+
+.img2:hover{
+    transform: scale(1.09);
+    transition: 0.3s;
+}
+
+
+@media (max-width: 1024px) {
+    .hero h1{
+        width: 75%;
+        font-size: 55px;
+    }
+    .hero p{
+        width: 65%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero{
+        gap: 20px;
+    }
+    .hero img{
+        margin-top: 60px;
+        width: 200px;
+    }
+    .hero h1{
+        margin-top: 20px;
+        width: 90%;
+        font-size: 38px;
+    }
+    .hero p{
+        width: 85%;
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .hero-action{
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero-connect{
+        padding: 18px 30px;
+    }
+    .hero-resume{
+        padding: 18px 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero img{
+        width: 160px;
+        margin-top: 40px;
+    }
+    .hero h1{
+        font-size: 28px;
+        width: 95%;
+    }
+    .hero p{
+        width: 95%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .hero-action{
+        flex-direction: column;
+        gap: 15px;
+        width: 90%;
+    }
+    .hero-connect, .hero-resume{
+        width: 100%;
+        text-align: center;
+        padding: 16px 0;
+    }
+}

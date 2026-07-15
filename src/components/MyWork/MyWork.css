@@ -1,0 +1,113 @@
+.mywork{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.mywork-title{
+    position: relative;
+}
+
+.mywork-title h1{
+    padding: 0px 30px;
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.mywork-title img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.mywork-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    /* max-height: 700px;
+    max-width: 1380px; */
+}
+
+.mywork-container img{
+    box-sizing: border-box;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.mywork-container img:hover{
+    transform: scale(1.10);
+    border: 4px solid #ff00ff;
+    background: #ff00ff;
+    /* background: linear-gradient(197deg, #ff00cc 50.41%, #3333ff 90.25%, #00ffcc); */
+    border-radius: 10px;
+    transition: 0.3a;
+}
+
+.mywork-showmore{
+    display: flex;
+    gap: 15px;
+    border-radius: 50px;
+    border: 2px solid white;
+    padding: 30px 60px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 80px;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.mywork-showmore:hover{
+    gap: 30px;
+    transition: 0.6s;
+}
+
+@media (max-width: 1024px) {
+    .mywork{
+        margin: 80px 60px;
+    }
+    .mywork-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .mywork{
+        margin: 60px 30px;
+        gap: 50px;
+    }
+    .mywork-title h1{
+        font-size: 42px;
+        padding: 0 10px;
+    }
+    .mywork-container{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .mywork-container img{
+        height: 220px;
+    }
+    .mywork-showmore{
+        padding: 20px 45px;
+        margin-bottom: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .mywork{
+        margin: 40px 20px;
+    }
+    .mywork-title h1{
+        font-size: 30px;
+    }
+    .mywork-container img{
+        height: 200px;
+    }
+}
